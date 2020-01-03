@@ -1,0 +1,54 @@
+<nav class="navbar  container-fluid  navbar-expand-lg navbar navbar-dark bg-dark" >
+
+<div class="col-md-2 col-lg-4">
+
+</div>
+<!-- Esto es un comentario
+  <a class="navbar-brand" href="">MigFer</a>
+
+<i class="fab fa-twitter-square" style="font-size: 40px; color: blue"></i>
+
+-->
+<a href="/"><img src="assets/img/kanata.ico" class=" rounded border" alt=""></a>
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto ">
+
+      <li class="nav-item "routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/']">Inicio </a>
+      </li>
+
+      <li class="nav-item "routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/novedades']">Novedades </a>
+      </li>
+
+      <li class="nav-item dropdown "routerLinkActive="active" >
+
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Servicios</a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" [routerLink]="['/comercial']">Aseo Comercial</a>
+          <a class="dropdown-item" [routerLink]="['/industrial']">Aseo Industrial</a>
+          <a class="dropdown-item" [routerLink]="['/residencial']">Aseo Residencial</a>
+        </div>
+      </li>
+
+      <li class="nav-item"routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+      </li>
+
+      <li class="nav-item"routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/nosotros']" >Nosotros</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
